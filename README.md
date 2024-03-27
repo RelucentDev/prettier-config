@@ -36,7 +36,7 @@ module.exports = {
 
 ## License
 
-MIT &copy; 2023 Relucent Ltd
+MIT &copy; 2024 Relucent Ltd
 
 ### Contact
 
