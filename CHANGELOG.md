@@ -1,5 +1,11 @@
 # @relucent.dev/prettier-config
 
+## 2.1.4
+
+### Patch Changes
+
+- 646b072: re-release under MIT license
+
 ## 2.1.3
 
 ### Patch Changes
