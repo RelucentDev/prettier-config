@@ -20,6 +20,7 @@
     "prettier-config"
   ],
   "scripts": {
+    "changeset": "changeset",
     "lint": "npm-run-all prettier",
     "lint:dev": "npm-run-all prettier:dev",
     "prettier": "prettier --check .",
