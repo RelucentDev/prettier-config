@@ -1,5 +1,11 @@
 # @relucent.dev/prettier-config
 
+## 2.1.8
+
+### Patch Changes
+
+- 60710e5: correct publishing access
+
 ## 2.1.7
 
 ### Patch Changes
