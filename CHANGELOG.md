@@ -1,5 +1,11 @@
 # @relucent.dev/prettier-config
 
+## 2.1.9
+
+### Patch Changes
+
+- 52ab45e: re-enable provenance
+
 ## 2.1.8
 
 ### Patch Changes
