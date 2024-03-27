@@ -36,7 +36,7 @@ module.exports = {
 
 ## License
 
-GNU LGPLv3 &copy; 2023 Relucent Ltd
+MIT &copy; 2023 Relucent Ltd
 
 ### Contact
 
