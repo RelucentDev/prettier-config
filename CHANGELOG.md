@@ -1,5 +1,11 @@
 # @relucent.dev/prettier-config
 
+## 2.1.10
+
+### Patch Changes
+
+- 3a118b1: bump dependencies
+
 ## 2.1.9
 
 ### Patch Changes
