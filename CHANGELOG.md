@@ -1,5 +1,11 @@
 # @relucent.dev/prettier-config
 
+## 2.1.11
+
+### Patch Changes
+
+- 33c38a7: configure publishing for only specific files
+
 ## 2.1.10
 
 ### Patch Changes
