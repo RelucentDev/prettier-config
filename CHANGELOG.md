@@ -1,5 +1,11 @@
 # @relucent.dev/prettier-config
 
+## 2.2.1
+
+### Patch Changes
+
+- a4ed875: add missing dist files
+
 ## 2.2.0
 
 ### Minor Changes
