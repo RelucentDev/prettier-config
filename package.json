@@ -1,8 +1,8 @@
 {
   "name": "@relucent.dev/prettier-config",
   "version": "2.1.11",
-  "description": "Relucent's Shared Prettier Config",
   "type": "module",
+  "description": "Relucent's Shared Prettier Config",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/RelucentDev/prettier-config.git",
@@ -27,8 +27,8 @@
     }
   },
   "files": [
-    "src",
-    "dist"
+    "dist",
+    "src"
   ],
   "keywords": [
     "prettier",
@@ -36,15 +36,15 @@
     "prettier-config"
   ],
   "scripts": {
-    "changeset": "changeset",
     "build": "npm-run-all tsup",
+    "changeset": "changeset",
     "lint": "npm-run-all typecheck publint prettier",
     "lint:dev": "npm-run-all typecheck publint prettier:dev",
     "prettier": "prettier --check .",
-    "tsup": "tsup src/index.ts --format cjs,esm --minify --dts --sourcemap",
-    "publint": "publint",
     "prettier:dev": "prettier --write .",
+    "publint": "publint",
     "release": "changeset publish",
+    "tsup": "tsup src/index.ts --format cjs,esm --minify --dts --sourcemap",
     "typecheck": "tsc --noEmit"
   },
   "peerDependencies": {
