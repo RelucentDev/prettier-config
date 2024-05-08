@@ -41,6 +41,7 @@ jobs:
           restore-keys: node_modules-
       - run: npm clean-install
       - run: npm audit signatures
+      - run: npm run build
       - uses: changesets/action@v1
         with:
           publish: npm run release
