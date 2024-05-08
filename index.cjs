@@ -6,24 +6,42 @@
  * @see       https://relucent.dev
  */
 
-/** @type {import("prettier").Config & import("@trivago/prettier-plugin-sort-imports").PluginConfig} */
+const sortImports = require("@ianvs/prettier-plugin-sort-imports");
+const shellScript = require("prettier-plugin-sh");
+const packageFile = require("prettier-plugin-pkg");
+const xml = require("prettier-plugin-xml");
+
+/** @type {import("prettier").Config & import("@ianvs/prettier-plugin-sort-imports").PrettierConfig} */
 module.exports = {
   proseWrap: "always",
+  plugins: [
+    sortImports,
+    shellScript,
+    packageFile,
+    xml,
+  ],
   importOrder: [
+    // Preceding Space
+    // See: https://github.com/IanVS/prettier-plugin-sort-imports?tab=readme-ov-file#6-enforce-a-blank-line-after-top-of-file-comments
     "",
-    "^@?jest(/.*|$)",
+
+    // Frameworks and Runtimes
+    "^@?jest/.*$",
     "^react(-dom)?$",
     "^next(/.*|$)",
+    "^@next(/.*|$)",
+    "^@payloadcms(/.*|$)",
+    "<BUILT_IN_MODULES>",
+
+    // Third Party Source
     "<THIRD_PARTY_MODULES>",
-    "^[./]",
+
+    // Internal
+    "^[.]",
     "^(@|\\d|_)",
-    "<THIRD_PARTY_TS_TYPES>",
-    "<TS_TYPES>^[./]",
-  ],
-  plugins: [
-    "@trivago/prettier-plugin-sort-imports",
-    "@prettier/plugin-xml",
-    "prettier-plugin-sh",
-    "prettier-plugin-pkg",
+
+    // Types
+    "<TYPES>",
+    "<TYPES>^[.]",
   ],
 };
