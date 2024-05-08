@@ -1,5 +1,16 @@
 # @relucent.dev/prettier-config
 
+## 2.2.0
+
+### Minor Changes
+
+- 18c7be4: use @ianvs/prettier-plugin-sort-imports over
+  @trivago/prettier-plugin-sort-imports
+
+### Patch Changes
+
+- ddd75ef: add CJS + ESM support + TypeScript source
+
 ## 2.1.11
 
 ### Patch Changes
