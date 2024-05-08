@@ -1,6 +1,6 @@
 {
   "name": "@relucent.dev/prettier-config",
-  "version": "2.1.11",
+  "version": "2.2.0",
   "type": "module",
   "description": "Relucent's Shared Prettier Config",
   "repository": {
