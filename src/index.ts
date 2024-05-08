@@ -6,19 +6,19 @@
  * @see       https://relucent.dev
  */
 
-const sortImports = require("@ianvs/prettier-plugin-sort-imports");
-const shellScript = require("prettier-plugin-sh");
-const packageFile = require("prettier-plugin-pkg");
-const xml = require("prettier-plugin-xml");
+import sortImports from "@ianvs/prettier-plugin-sort-imports";
+import shellScript from "prettier-plugin-sh";
+import packageFile from "prettier-plugin-pkg";
+import prettierXML from "@prettier/plugin-xml";
 
 /** @type {import("prettier").Config & import("@ianvs/prettier-plugin-sort-imports").PrettierConfig} */
-module.exports = {
+const config = {
   proseWrap: "always",
   plugins: [
     sortImports,
     shellScript,
     packageFile,
-    xml,
+    prettierXML,
   ],
   importOrder: [
     // Preceding Space
@@ -45,3 +45,5 @@ module.exports = {
     "<TYPES>^[.]",
   ],
 };
+
+export default config;
